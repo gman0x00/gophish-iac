@@ -1,7 +1,7 @@
 # ADMIN UI: Only available to this subdomain and port
 server {
   listen 8443 ssl;
-  server_name tbcuvfu.${admin_domain};
+  server_name ${admin.subdomain}.${admin_domain};
 
   ssl_certificate     /etc/letsencrypt/live/${admin_domain}/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/${admin_domain}/privkey.pem;
