@@ -53,7 +53,7 @@ terraform apply
 ```
 
 ## Admin Interface
-Important: The first domain in domains[] will serve the admin UI at https://tbcuvfu.<first-domain>:8443
-Served at: https://tbcuvfu.<first-domain> on port 8443
+Important: The first domain in domains[] will serve the admin UI at https://{admin_subdomain}.<first-domain>:8443
+Served at: https://{admin_subdomain}.<first-domain> on port 8443
 If a conflicting A record already exists, you'll need to manually update it
 Output will display the EC2 public IP to configure DNS if needed
